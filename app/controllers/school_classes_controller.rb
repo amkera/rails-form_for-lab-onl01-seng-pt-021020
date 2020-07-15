@@ -28,6 +28,8 @@ class SchoolClassesController < ApplicationController
   def school_class_params
     params.require(:school_class).permit!
   end
+  
+  #calling the method permit! has modified the params itself and also returned the params
 end
 
 #params:
